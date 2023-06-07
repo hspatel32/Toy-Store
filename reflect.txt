@@ -1,0 +1,12 @@
+// Name: Harsh Shaileshkumar Patel
+// Student id: 144928206
+// Section: OOP345-ZAA
+// Professor: Cornel barna 
+// E-mail: hspatel32@myseneca.ca
+
+Move constructor moves the resources in the heap, i.e., unlike copy constructors which copy the data of the existing object and assigning it to the new object move 
+constructor just makes the pointer of the declared object to point to the data of temporary object and nulls out the pointer of the temporary objects. It's faster 
+because moving allows the source to be left in a invalid state, so you can steal it's resources. For example, if a object holds a pointer to a large block of allocated 
+memory, a move can simply steal the pointer while a copy must allocate its own memory and copy the whole memory block. A move constructor allows the resources owned by 
+an rvalue object to be moved into an lvalue without creating its copy. An rvalue is an expression that does not have any memory address, and an lvalue is an expression 
+with a memory address.
